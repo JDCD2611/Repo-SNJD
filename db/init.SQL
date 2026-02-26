@@ -6,4 +6,4 @@ CREATE TABLE IF NOT EXISTS tickets (
     resuelto BOOLEAN DEFAULT FALSE
 );
 
-INSERT INTO tickets (usuario, descripcion_falla) VALUES ('Usuario Inicial', 'Falla de prueba');
+INSERT INTO tickets (usuario, descripcion_falla) VALUES ('general', 'Sugerencias del sistema');
