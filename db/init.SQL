@@ -1,9 +1,9 @@
-CREATE TABLE IF NOT EXISTS tickets (
+CREATE TABLE IF NOT EXISTS sugerencias (
     id SERIAL PRIMARY KEY,
-    usuario VARCHAR(100) NOT NULL,
-    descripcion_falla TEXT NOT NULL,
-    fecha_reporte TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    resuelto BOOLEAN DEFAULT FALSE
+    tema VARCHAR(100) NOT NULL,
+    detalle_sugerencia TEXT NOT NULL,
+    fecha_envio TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    revisada BOOLEAN DEFAULT FALSE
 );
 
-INSERT INTO tickets (usuario, descripcion_falla) VALUES ('general', 'Sugerencias del sistema');
+INSERT INTO tickets (usuario, descripcion_falla) VALUES ('general', 'sugerencias');

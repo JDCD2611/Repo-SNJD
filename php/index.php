@@ -1,5 +1,5 @@
 <?php
-$dsn = "pgsql:host=db;dbname=portafolio_db";
+$dsn = "pgsql:host=db;dbname=portafolio_db"; 
 $user = "usuario_p1"; $pass = "password123";
 try { $pdo = new PDO($dsn, $user, $pass, [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]); } 
 catch (PDOException $e) { die("ERROR: " . $e->getMessage()); }
